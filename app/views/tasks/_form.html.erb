@@ -10,7 +10,7 @@
           </ul>
         </div>
       <% end %>
-      
+
       <p>
         <div class="form-group">
           <%= f.label :content, 'タスク' %>
@@ -24,7 +24,7 @@
           <%= f.text_field :status, class: 'form-control' %>
         </div>
       </p>
-      <%= f.hidden_field :user_id, value: current_user.id %>
+      
       <%= f.submit '投稿', class: 'btn btn-primary' %>
     <% end %>
   </div>
